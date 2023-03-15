@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slider</title>
+    <title>Odio il carosello</title>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -20,12 +20,9 @@
                     <img :src="slides[active].image" />
 
                     <div class="text">
-                        <h3>Spiderman</h3>
+                        <h3>{{slides[active].title}}</h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit
-                            tempore aliquid deleniti aut
-                            veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum
-                            corporis.
+                            {{slides[active].text}}
                         </p>
                     </div>
                 </div>
