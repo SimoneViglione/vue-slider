@@ -33,12 +33,26 @@ const { createApp } = Vue
           active: 0
         }
       },
+
     methods: {
 
-        
-    }
+    prev() {
+        if (this.active === 0) {
+            this.active = this.slides.length - 1
+        } else {
+            this.active--
+        }
+    },
+        next() {
+        if (this.active === this.slides.length - 1) {
+            this.active = 0
+        } else {
+            this.active++
+        }
+    },
+}
 
-  }).mount('#app')
+}).mount('#app')
 
 
 

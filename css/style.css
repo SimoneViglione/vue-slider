@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(0, 0, 71);
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -11,10 +15,17 @@
     align-items: center;
 }
 
+.slider-wrapper {
+    box-shadow:
+    0 0 60px 30px #fff,  
+    0 0 80px 40px #f0f,
+    0 0 120px 70px #0ff;
+}
+
 .item {
     float: left;
     width: 700px;
-    height: 300px;
+    height: 400px;
     position: relative;
 }
 
@@ -34,13 +45,13 @@
 
 .thumbs {
     float: left;
-    height: 300px;
+    height: 400px;
     background: #000;
     position: relative;
 }
 
 .thumb {
-    height: calc((300px) / 5);
+    height: calc((400px) / 5);
     opacity: 0.5;
 }
 
