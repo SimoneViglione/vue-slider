@@ -43,7 +43,7 @@ const { createApp } = Vue
             this.active--
         }
     },
-        next() {
+    next() {
         if (this.active === this.slides.length - 1) {
             this.active = 0
         } else {
@@ -56,7 +56,3 @@ const { createApp } = Vue
  }
 
 }).mount('#app')
-
-
-
-console.log(slides);

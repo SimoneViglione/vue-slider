@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odio il carosello</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                     <img :src="slides[active].image" />
 
                     <div class="text">
-                        <h3>{{slides[active].title}}</h3>
+                        <h3 v-html="slides[active].title"></h3>
                         <p>
                             {{slides[active].text}}
                         </p>
