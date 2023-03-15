@@ -50,7 +50,10 @@ const { createApp } = Vue
             this.active++
         }
     },
-}
+    selectSlide(index) {
+        this.active = index
+    }
+ }
 
 }).mount('#app')
 
